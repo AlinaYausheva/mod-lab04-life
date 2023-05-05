@@ -16,5 +16,12 @@
   <ItemGroup>
     <ProjectReference Include="..\Life\Life.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="board.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    
+  </ItemGroup>
 
 </Project>
