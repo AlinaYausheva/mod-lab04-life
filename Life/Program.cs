@@ -159,7 +159,7 @@ namespace cli_life
         
         static public Figure MackMask(string file_name, Figure figure)
         {
-            file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
+            //file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
             StreamReader file = new StreamReader(file_name);
 
             figure.Height = File.ReadAllLines(file_name).Length;
@@ -329,7 +329,7 @@ namespace cli_life
 
         public static Board ChangeSetting(string file)
         {
-            file = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file);
+            //file = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file);
 
             string jsonFile = File.ReadAllText(file);
 
@@ -342,7 +342,7 @@ namespace cli_life
         {
             string file_name = "save.txt";
 
-            file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
+            //file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
 
             StreamWriter file = new StreamWriter(file_name, false);
 
@@ -364,7 +364,7 @@ namespace cli_life
 
         public static Board ReadFile(string file_name)
         {
-            file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
+            //file_name = Path.Combine(Path.GetFullPath(AppDomain.CurrentDomain.BaseDirectory + @"..\\..\\..\\"), file_name);
             StreamReader file = new StreamReader(file_name);
 
             int numStr = File.ReadAllLines(file_name).Length;
